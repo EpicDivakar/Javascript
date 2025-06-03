@@ -41,6 +41,13 @@ console.log(myFirstJob);
 
  // Data types in javascript//
 
+ // Questions on Data types in Javascript//
+  let isIsland = false; // Boolean data type//
+  let language; // undefined data type//
+  console.log(typeof isIsland);
+  console.log(typeof language);
+  console.log(typeof continent);
+  console.log(typeof country);
  let myAge = 23; // Number data type//
  let myName = "Diwakar"; // String data type//
 
@@ -80,9 +87,126 @@ job1 = "Singer"; // We can change the value of the varible which is declared wit
 
 // Operators in Javascript//
 
-let ageJonas = 2037-1991;
-let ageSarah = 2037 - 2018;
+// Assignment for operators in Javasscript//
+console.log(population / 2);
+
+population++;
+
+console.log(population);
+console.log(population > 6);
+console.log(population < 33);
+
+const description1 =
+  country +
+  ' is in ' +
+  continent +
+  ', and its ' +
+  population +
+  ' million people speak ' +
+  language;
+
+console.log(description1);
+
+// Maths Operators in Javascript//
+let now = 2037;
+let ageJonas = now - 1991;
+let ageSarah = now - 2018;
 console.log(ageJonas , ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10 , 2 ** 3);
+ 
+const hisName = "Diwakar";
+const herName = "Venus";
+
+console.log(hisName + " " + herName);
+
+// Assignment Operators in Javascript//
+
+let x = 10 + 5; // 15
+
+x += 10; // x = x + 10;
+x*= 4; // x = x * 4;
+x++; // x = x + 1;
+x--; // x = x - 1;
+console.log(x);
+
+// Comparison Operators in Javascript//
+
+console.log( ageJonas > ageSarah);
+console.log(ageSarah >= 18);
+
+// Challenge 1 //
+let massMark = 78
+let heightMark = 1.69
+
+let massJohn = 92
+let heightJohn = 1.95
+
+let BMIMark = massMark / (heightMark * heightMark);
+let BMIJohn = massJohn / (heightJohn * heightJohn);
+
+console.log(BMIMark);
+console.log(BMIJohn);
+
+let MarkHigherBMI  = ( BMIMark > BMIJohn);
+console.log(MarkHigherBMI);
+
+// String and Templete Literals in Javascript//
+
+const firstName5 = "Ketan";
+const job5 = 'Gambler';
+const birthYear5 = 2005;
+const year1 = 2025;
+
+const Ketan = "I'm" + firstName5 + ',a' + (year - birthYear) + 'years old' + job5  + '!';
+console.log(Ketan);
+
+// Template Literals in Javascript//
+
+const ketanNew = `I'm ${firstName5} , a ${birthYear5 - year1} years old ${job5}!`;
+
+// We can also use backticks to write any regular string//
+
+console.log(`This is a String`);
+console.log('String with \n\
+   multiple\n\
+   lines');
+
+   console.log(`Multiple 
+      line 
+      string`);
+
+// If , Else Statements in Javascript//
+
+/*const age1 = 15;
+const isOldEnough = age <= 18;
+
+if (isOldEnough) {
+   console.log("Diwakar can start driving license");
+
+}
+else {
+   console.log("He Can drive after 18 years of age");
+}
+
+
+if(){
+
+}
+else{
+
+} */
+
+const birthYear0 = 1998;
+let century;
+if (birthYear0 <= 2000){
+   century = 20;
+} else {
+   century = 21;
+}
+console.log(century);
+
+// If Else Statement Assignment//
 
 
 
