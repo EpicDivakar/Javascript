@@ -1,4 +1,4 @@
-let js = "amazing";
+/* let js = "amazing";
 //if (js ==="amazing")alert("Javascript is fun");//
 
 23+4+6+7;
@@ -195,7 +195,7 @@ if(){
 }
 else{
 
-} */
+} 
 
 const birthYear0 = 1998;
 let century;
@@ -207,6 +207,100 @@ if (birthYear0 <= 2000){
 console.log(century);
 
 // If Else Statement Assignment//
+
+heightMark = 1.69;
+
+massJohn = 92;
+heightJohn = 1.95;
+
+BMIMark = massMark / (heightMark * heightMark);
+BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if(BMIMark > BMIJohn){
+    console.log("Mark's BMI is higher than John's!")
+} else{
+    console.log("John's BMI is higher than Mark's!")
+}
+if (BMIMark > BMIJohn){
+    console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
+} else{
+    console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`)
+}*/
+
+// Types Conversion and Coercion in Javascript//
+
+// Type conversion
+const inputYear = "1991";
+console.log(Number(inputYear) , inputYear);
+console.log(Number(inputYear) + 18);
+
+// Now what if we want to convert a string which contains alphabets to number
+
+console.log(Number ("Diwakar")); // Output is NaN
+console.log(typeof NaN); // Although NaN is a number but it is a invalid number type.
+
+console.log(String(23));
+// Whenever we are converting a number into another type , we need to keep in mind that it should be in capital letters.
+
+//Type Coercion
+console.log("I am " + 23 + "years old"); // Here + trigger and convert number to string 
+console.log("23" - "10" - 3); // Here - trigger and it convert string into numbers
+
+let n = "1" + 1; 
+n = n - 1;
+console.log(n); // Output is 10 
+
+// Type Coercion Assignment
+console.log('9' - '5'); // 4
+console.log('19' - '13' + '17'); // 617
+console.log('19' - '13' + 17); // 23
+console.log('123' < 57); // false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // 114
+
+//Truthy and Falsy Values in Javascript
+
+// 5 falsy values in Javascript is 0 '' , undefined , null and NaN
+
+console.log(Boolean(0));
+console.log(Boolean (undefined));
+console.log(Boolean('Diwakar'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money){
+   console.log("Don't spend it all;");
+} else {
+   console.log('You should get a job1'); 
+}
+
+let height  = 0;
+if (height){
+   console.log("YaY! Height is defined");
+} else {
+   console.log("Height is Undefined");
+}
+ // Even though height is 0 but it is a defined varible so it will retuen true but due to falsy value it will not execute that and count it in falsy value and gives us the else statemt 
+ // This is a kind of Bug in the JS 
+
+// Equality Operators in Javascript
+
+const age = 18;
+if (age === 18) console.log("You just become an adult : D");
+
+const age1 = "18";
+if (age1 === 18) console.log("You just become adulttt :D");
+// Here it will give error because === is strict equality operator it doen't follow type Coercion in JS , things need to equal than and only it will give it output as true otherwise it will give result as false
+
+const favourite = prompt("Whats your favourite number?");
+if (favourite=== 23){
+   console.log("Cool ! 23 is an amazing number");
+}
+else if (favourite===7){
+   console.log("7 is also a cool number ")
+} else {
+   console.log("Better luck next time ");
+}
 
 
 
