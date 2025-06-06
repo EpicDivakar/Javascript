@@ -225,7 +225,7 @@ if (BMIMark > BMIJohn){
     console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
 } else{
     console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`)
-}*/
+}
 
 // Types Conversion and Coercion in Javascript//
 
@@ -301,6 +301,113 @@ else if (favourite===7){
 } else {
    console.log("Better luck next time ");
 }
+
+// Logical Operators in Javascript
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);// And Operator
+console.log(hasDriversLicense || hasGoodVision);// Or operator
+console.log(!hasDriversLicense);// Not Operator
+
+const shouldDrive = hasDriversLicense && hasGoodVision
+if (shouldDrive){
+   console.log("Sarah is able to drive");
+}
+else {
+   console.log("Someone else should drive...");
+}
+
+const isTired = false
+console.log(hasDriversLicense || hasGoodVision|| isTired);
+if (hasDriversLicense && hasGoodVision && !isTired){
+   console.log("Sarah is able to drive");
+}
+
+// Assignment for Logical Operators 
+
+
+const dolphins = (96 , 108 , 89);
+const koalas = (88 , 91 , 110);
+
+const scoreDolphins = (dolphins % 3);
+const scoreKoalas = (koalas % 3);
+
+console.log(scoreKoalas);
+console.log(scoreDolphins);
+
+if(scoreDolphins > scoreKoalas){
+    console.log("Dolphins win the trophy")
+}
+ else if (scoreKoalas > scoreDolphins){
+    console.log("Koalas win the trophy")
+}
+ else if (scoreDolphins === scoreKoalas){
+    console.log("Both win the trophy")
+}
+    */
+
+// Switch Statement in Javascript
+const day = "sunday";
+switch (day){
+   case "Monday":
+      console.log("Plan Course structure ")
+      console.log("Go to coding meetup");
+      break
+
+case "tuesday":
+   console.log('Prepare theory videos') 
+break;
+    case "wednesday":
+    case "thursday":
+      console.log('Write code examples');
+      break;
+    case "friday":
+      console.log("Record Videos");
+   break;
+case "saturday":
+case "sunday":
+   console.log("Enjoy the weekend : D");
+  }
+ 
+  if (day === "Monday"){
+   console.log("Plan Course Structure");
+   console.log("Go to coding meetup")
+  }
+   else if (day === "tuesday"){
+   console.log("Prepare theory Videos")
+  }
+  else if (day === "wednesday" || day === "thursday"){
+   console.log("write Code examples");
+  }
+  else if (day === "friday"){
+   console.log("Record Videos");
+  }
+  else if (day === "saturday" || day === "sunday"){
+   console.log("Enjoy the Weekend : D");
+  }
+  else {
+   console.log("Not a valid day");
+  }
+
+  // Statement and Expression in Javascript//
+   3+4 // This is an expression as this produce a value
+   1991 // This is also an expression as this produce a value 
+
+if (23 > 10){
+   const str = '23 is bigger';
+}
+
+console.log (`I'm ${2037-3938} years old`);
+
+// Condiotional (Ternary) Operator in javascript
+
+const age = 13;
+age >= 18 ? console.log("I like to drink wine"):
+console.log("I like to drink water");
+
+ const drink = age >=18 ? 'wine' : 'water';
+ console.log(drink);
 
 
 
