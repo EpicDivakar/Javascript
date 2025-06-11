@@ -114,7 +114,7 @@ const checkWinner = function (avgDolphins, avgKoalas) {
   }
 };
  
-checkWinner(scoreDolphins, scoreKoalas);   */
+checkWinner(scoreDolphins, scoreKoalas);   
 
 
 // Array 
@@ -151,35 +151,98 @@ const Years = [1991 , 1873 , 1999 , 2000 , 2001];
 const age1 = calcAge(years[0]);
 const age2 = calcAge(years[1]);
 const age3 = calcAge(years[years.length - 1]);
+*/
 
-// Basic Array Operations (Methods)
-const friends = ['Michael', 'Steven', 'Peter'];
+// Array basic Oprations
 
-// Add elements
-const newLength = friends.push('Jay');
+// add element methods
+// push method adds an element to the end of the array //const friends = ['Michel' , ' Diwakar' , 'Jyoti'];
+const friends = ['Michel' , 'Diwakar' , 'Peter']
+ const newLength = friends.push('Jay');
 console.log(friends);
-console.log(newLength);
+console.log(friends.length);
+
+// to add element to the beginning of the array we use upshift
 
 friends.unshift('John');
 console.log(friends);
 
-// Remove elements
-friends.pop(); // Last
+// Removing elements from the array.
+
+// pop methods removes the last element of the array
+
+friends.pop();
+friends.pop();
 const popped = friends.pop();
-console.log(popped);
+console.log(popped); // It returns the removed element
 console.log(friends);
 
-friends.shift(); // First
-console.log(friends);
+// shift method removes the first element of the array
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+friends.shift();
+console.log(friends);
+console.log(friends.indexOf('Diwakar'));
+console.log(friends.indexOf('Michel'));
+// indexOf methods check the index value of the particular element in the array
 
 friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));
+console.log(friends.includes('Diwakar'));
+console.log(friends.includes('Jay'));
+console.log(friends.includes('23'));
+// includes method checks whether the element is present in the array or not
+// It returns true or false
+// it checks for the strict equality 
 
-if (friends.includes('Steven')) {
-  console.log('You have a friend called Steven');
+if (friends.includes('Michel')){
+  console.log('Yes , you are in the array list')
 }
+// It is important and wuill be used further in the code
+
+// Objects in Javascript
+/*const jonas  = {
+        firstName : 'Jonas',
+        lastName : 'Schemedtmann',
+        age : 2037 - 1991,
+        job : 'teacher',
+        friends : ['Michel' , "Diwakar" , "Deepak"]
+
+}*/
+// This object has 5 properties 
+// Using curly braces is called object literals
+// Order of values doesn't matter in the objects as it does in arrays 
+
+// Now's lets talk about to retrive data and how to change data in the objects
+
+// Dot Notation
+const jonas  = {
+        firstName : 'Jonas',
+        lastName : 'Schemedtmann',
+        age : 2037 - 1991,
+        job : 'teacher',
+        friends : ['Michel' , "Diwakar" , "Deepak"]
+
+}
+console.log(jonas);
+console.log(jonas.lastName);// Dot Notation 
+console.log(jonas['lastName']); // Bracket Notation
+
+const nameKey = 'Name';
+console.log(jonas['first ' + nameKey]);
+console.log(jonas['last' + nameKey]);// This is called dynamic property access 
+// This is called dynamic property access
+ const interestedIn = prompt ('What do you want to know about Jonas ? Choose between firstName , lastName and friends')
+console.log(jonas[interestedIn])
+
+if (jonas[interestedIn]){
+  console.log(jonas[interestedIn]);
+}else {
+  console.log('Wrong request : Choose between firstName , lastName , age , job , and friends')
+}
+
+// Now let's see how to add or remove any data from the array
+jonas.location = 'Delhi';
+jonas['twitter'] = '@asjdfkl';
+console.log(jonas);
+
+// Challenge
+console.log = (` ${jonas.firstName} has ${jonas.friends.length} friends , and his bestfriend is called ${jonas.friends[0]}`);
