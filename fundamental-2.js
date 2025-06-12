@@ -206,7 +206,7 @@ if (friends.includes('Michel')){
         job : 'teacher',
         friends : ['Michel' , "Diwakar" , "Deepak"]
 
-}*/
+}
 // This object has 5 properties 
 // Using curly braces is called object literals
 // Order of values doesn't matter in the objects as it does in arrays 
@@ -246,3 +246,27 @@ console.log(jonas);
 
 // Challenge
 console.log = (` ${jonas.firstName} has ${jonas.friends.length} friends , and his bestfriend is called ${jonas.friends[0]}`);
+*/
+const jonas = {
+  firstName : 'jonas',
+  lastName :'schemedmann',
+  birthYear : 1991,
+  job : 'teacher',
+  friends : ['Michel' , 'Peter' , 'Steven'],
+  hasDriversLicense : true,
+
+
+//   calcAge : function (){
+//     console.log(this);
+//     return 2037 - this.birthYear;
+//   }
+// };
+
+// we can put anything inside a object
+calcAge : function (){
+  this.age = 2037 - this.birthYear;
+  return this.age;
+}
+}
+
+
