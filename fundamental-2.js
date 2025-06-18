@@ -263,7 +263,9 @@ const jonas = {
 // };
 
 // we can put anything inside a object
-  When JavaScript code runs, it goes through a structured life cycle behind the scenes. First, the JavaScript engine parses the code, reading it line by line to check for syntax errors and prepare it for execution. Then, it enters the memory creation phase, also known as the creation phase of the execution context. In this phase, memory is allocated for all variables and functions — variables declared with var, let, or const are set up in memory (with undefined for var and uninitialized for let/const), and function declarations are stored entirely in memory.
+
+//This is the life cycle of how code actually works behind the scenes  
+When JavaScript code runs, it goes through a structured life cycle behind the scenes. First, the JavaScript engine parses the code, reading it line by line to check for syntax errors and prepare it for execution. Then, it enters the memory creation phase, also known as the creation phase of the execution context. In this phase, memory is allocated for all variables and functions — variables declared with var, let, or const are set up in memory (with undefined for var and uninitialized for let/const), and function declarations are stored entirely in memory.
 
 After memory is allocated, JavaScript enters the execution phase, where the code is actually run line by line. Variables get assigned their actual values, and when a function is called, a new execution context is created for that function. To manage this flow, JavaScript uses something called the call stack. Whenever a function is invoked, it is pushed onto the call stack, and once the function completes, it is popped off. This helps JavaScript keep track of what needs to run and in what order.
 
