@@ -292,7 +292,7 @@ const jonas = {
 console.log(jonas.age(1991));//accessed thorugh dot notation
 //console.log(jonas[age](1991));// accessed through bracket notation
 // Function inside a object is called method.
-*/
+
 // Challenge 
 
 const diwakar = {
@@ -306,6 +306,35 @@ const diwakar = {
   }
 }
 console.log(diwakar.getSummary())
+
+//console.log('Lifting weights repetition 1');
+//console.log('Lifting weights repetition 1');
+//onsole.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 1');
+// for loop keep running till the condition is true*/
+
+for (let rep = 5; rep <= 10; rep++){
+  console.log("Lifiting weight repetition ${rep}")
+}
+
+const days = ['Monday' , 'Tuesday' , 'Wedesday', 'Thursday' , 'friday' , 'wednesday' , 'Thursday' , 'Friday' , 'Saturday' , 'Sunday']
+
+for (let i = 0 ; i<=days.length; i++){
+    console.log(days[i]);
+}
+const joansArray = [
+  'jonas' , 'schemdtman' , 2037 - 1991 , 'teacher' , ['micheal ' , 'peter' , 'steven']
+];
+
+for (let i = 0 ; i <=joansArray.length; i++) {
+console.log(joansArray [i])
+}
 
 
 
