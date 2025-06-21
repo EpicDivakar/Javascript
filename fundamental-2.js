@@ -335,6 +335,22 @@ const joansArray = [
 for (let i = 0 ; i <=joansArray.length; i++) {
 console.log(joansArray [i])
 }
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
 
+
+const fruits = ["apple", "banana", "mango"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+console.log("Total sum:", sum);
 
 
