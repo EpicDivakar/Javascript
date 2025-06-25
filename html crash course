@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+</head>
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph of text.</p>
+    <a href="https://google.com" target="_blank">Visit Google</a>
+    <br>
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <br><br>
+
+    <h2>List Example</h2>
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+    </ul>
+
+    <h2>Table Example</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <h2>Form Example</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
