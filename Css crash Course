@@ -1,0 +1,56 @@
+<p style="color: blue;">This is blue text.</p> // Inline css
+
+<style>
+    h1 {
+        color: green;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        color: gray;
+    }
+</style>
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+<link rel="stylesheet" href="style.css"> // to link style sheet
+
+#main-heading {
+    color: red;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+}
+
+// to access elements like class and ID
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+<div class="container">
+    <p>I'm centered!</p>
+</div>
+
+
