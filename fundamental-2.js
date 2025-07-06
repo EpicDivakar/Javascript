@@ -382,34 +382,4 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 
-// 6. Print squares of numbers from 1 to 5
-for (let i = 1; i <= 5; i++) {
-  console.log(i * i);
-}
-
-// 7. Sum of even numbers from 1 to 10
-let sum2 = 0;
-for (let i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    sum2 += i;
-  }
-}
-console.log("Sum of even numbers:", sum2);
-
-// 8. Print characters of a string
-const str = "Hello";
-for (let i = 0; i < str.length; i++) {
-  console.log(str[i]);
-}
-
-// 9. Multiplication table of 5
-for (let i = 1; i <= 10; i++) {
-  console.log(`5 x ${i} = ${5 * i}`);
-}
-
-// 10. Print array in reverse order
-const arr2 = [1, 2, 3, 4, 5];
-for (let i = arr2.length - 1; i >= 0; i--) {
-  console.log(arr2[i]);
-}
 
